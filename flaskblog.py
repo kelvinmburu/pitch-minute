@@ -3,12 +3,12 @@ from flask import Flask, render_template,url_for
 app = Flask(__name__)
 
 posts = [
-    {'title':'kelvin blog',
-     'author':'Jane Dode',
+    {'title':'Jane Blog',
+     'author':'Jane Doe',
      'date_posted':'May 09, 2022'
      },
-      {'title':'Jane blog',
-     'author':'Kelvin Dode',
+      {'title':'Kelvin blog',
+     'author':'Kelvin Mburu',
      'date_posted':'May 11, 2022'
      }
 ]
