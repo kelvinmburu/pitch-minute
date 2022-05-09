@@ -1,8 +1,15 @@
 from flask import Flask, render_template,url_for,flash, redirect
-from forms import RegistrationForm, LoginForm
-app = Flask(__name__)
+from flask_sqlalchemy import SQLAlchemy
+from flaskblog.forms import RegistrationForm, LoginForm
 
+
+app = Flask(__name__)
 app.config['SECRET_KEY'] = 'acd6b60c667a94557bce0aec3c409354'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+db = SQLAlchemy(app)
+
+from flaskblog.models import User, Post
+
 
 posts = [
     {'author':'Kelvin Mburu',
