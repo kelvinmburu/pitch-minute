@@ -48,6 +48,13 @@ The BDD focuses on how a user interacts with the application.
 
 At a minimum, this is what the user should experience in the application:
 
+* A user can see the pitches other people have posted.
+* A user can vote on the pitch they liked and give it a downvote or upvote.
+* The app allows a user to view the pitches they have created in their profile page.
+* A user can submit a pitch in any category and view the different categories.
+* A user can comment on the different pitches and leave feedback.
+* The app sends a welcoming email once they sign up.
+
 
 ## Project Contribution or Development:
 
