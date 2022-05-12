@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='/home/moringa/Moringa_Core/pitch-minute/flask'
+VIRTUAL_ENV='/home/moringa/Documents/pitch-minute2/flask'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
