@@ -1,6 +1,8 @@
 # Pitch Minute
 This is a Flask application that helps users list and preview news articles from various sources.
 
+![Site Screenshot](flaskblog/static/profile_pics/Flask-Blog.png)
+
 ## Project Run-Through
 * A few details about this project:
 
