@@ -5,6 +5,7 @@ from flaskblog.models import User, Post
 from flaskblog.users.forms import (RegistrationForm, LoginForm, UpdateAccountForm,
                                    RequestResetForm, ResetPasswordForm)
 from flaskblog.users.utils import save_picture, send_reset_email
+from ..email import mail_message
 
 users = Blueprint('users', __name__)
 
@@ -20,6 +21,7 @@ def register():
         user = User(username=form.username.data, email=form.email.data, password=hashed_password)
         db.session.add(user)
         db.session.commit()
+        mail_message("Welcome to watchlist","email/welcome_user",user.email,user=user)
         flash(f'Account created successfully. You can now log in','success')
         return redirect(url_for('users.login'))
     
@@ -102,3 +104,4 @@ def reset_token(token):
         flash('Your password has been reset successfully. You can now log in','success')
         return redirect(url_for('main.login'))
     return render_template("reset_token.html",form=form, title='Reset Password')
+
