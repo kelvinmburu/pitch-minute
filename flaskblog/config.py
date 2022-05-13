@@ -2,7 +2,7 @@ import os
 
 class Config:
     SECRET_KEY = 'acd6b60c667a94557bce0aec3c409354'
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:kevin@192.168.1.142/pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:kevin@localhost/pitches'
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TSL = True
@@ -19,11 +19,11 @@ class ProdConfig(Config):
     DEBUG = True
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:kevin@192.168.1.142/pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:kevin@localhost/pitches'
 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:kevin@192.168.1.142/pitches'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:kevin@localhost/pitches'
 
 
 config_options = {
