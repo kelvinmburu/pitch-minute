@@ -21,7 +21,7 @@ def register():
         user = User(username=form.username.data, email=form.email.data, password=hashed_password)
         db.session.add(user)
         db.session.commit()
-        mail_message("Welcome to watchlist","email/welcome_user",user.email,user=user)
+        #mail_message("Welcome to watchlist","email/welcome_user.txt",user.email,user=user)
         flash(f'Account created successfully. You can now log in','success')
         return redirect(url_for('users.login'))
     
