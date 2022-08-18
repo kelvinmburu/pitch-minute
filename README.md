@@ -28,8 +28,8 @@ This is a Flask application that helps users list and preview news articles from
 ## Project Requirements & Prerequisites
 
 1. IDE of Choice
-2. Python3
-3. Browser
+2. Python 3.8
+3. Browser of choice (Mozzilla, Google Chrome, Safari, Edge)
 
 * Please ensure you're working from a Windows/MacOS/Linux
 * Install Flask through `pip install flask`
