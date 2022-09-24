@@ -74,7 +74,6 @@ Please see the GitHub documentation on [Creating a Pull Request](https://help.gi
 
 To improve this project or fix a bug, please reach me via Email:
 * [mburuhkelvin@gmail.com](mailto:mburuhkelvin@gmail.com)
-* [kelvin.anjiku@student.moringaschool.com](mailto:kelvin.anjiku@student.moringaschool.com)
 
 Alternatively, you can contact me via [LinkedIn](https://www.linkedin.com/in/kelvin-m-560a25135/)
 
